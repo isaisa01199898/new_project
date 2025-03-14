@@ -10,5 +10,8 @@ class IndexView(View):
         ).strftime("%Y年%m月%d日 %H:%M:%S")
         return render(
             request, "diary/index.htm", {"now_time": now_time})  # 修正: コンテキストを辞書に変更
+    def self_get(self, request, *args, **kwargs):
+        return render(request, "app/index.html")
+
 
 index = IndexView.as_view()
