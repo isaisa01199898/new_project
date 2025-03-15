@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>;
     <!-- Favicon 設定 -->
-    <link rel="shortcut icon" href="https://thumb.ac-illust.com/41/410b4b23b0567b0bff859a4178631b2a_t.jpeg">
-    <link rel="icon" type="image/jpeg" href="https://thumb.ac-illust.com/41/410b4b23b0567b0bff859a4178631b2a_t.jpeg">
-    <link rel="apple-touch-icon" href="https://thumb.ac-illust.com/41/410b4b23b0567b0bff859a4178631b2a_t.jpeg">
+    <link rel="shortcut icon" href="https://thumb.ac-illust.com/41/410b4b23b0567b0bff859a4178631b2a_t.jpeg";
+    <link rel="icon" type="image/jpeg" href="https://thumb.ac-illust.com/41/410b4b23b0567b0bff859a4178631b2a_t.jpeg";
+    <link rel="apple-touch-icon" href="https://thumb.ac-illust.com/41/410b4b23b0567b0bff859a4178631b2a_t.jpeg";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libbot</title>
-    <meta name="description" content="三平方の定理について詳しく解説します。">
-    <meta name="keywords" content="三平方の定理, ピタゴラスの定理, 数学">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap" rel="stylesheet">
+    <meta name="description" content="life×robbot=libbot">
+    <meta name="keywords" content="生活をロボットで豊かに">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap&quot; rel="stylesheet">
     <link rel="stylesheet" href="button04.css">
     <style>
     body {
@@ -74,21 +75,22 @@
     <div class="content">
         <button class="menu-button" onclick="toggleMenu()">メニュー</button>
         <ul class="menu" id="menu">
-        <li><a href="#">libbot</a></li>
-        <li><a href="#">心拍数</a></li>
-        <li><a href="#">集中度</a></li>
+        <li><a href="#">libbotとは</a></li>
+        <li><a href="#">心拍数を測る</a></li>
         </ul>
+        <p>新時代のヘルスケア</p>
         <h1>libbot</h1>
-        <p>このサイトは</p>
+        <p>life(生活)×robbot(ロボット)</p>
         <button id="togglebottan">計測を始める</button>
         <div id="toggleElement" style="display: none;">
         結果は、
-        <p>{{heartrate}}</p>
+        <p>{{sensor_data}}</p>
         </div>
     </div>
     <div id="child_flame">
         {{ now_time }}
     </div>
+
     <script>
         function toggleMenu() {
         var menu = document.getElementById('menu');
@@ -98,7 +100,7 @@
             menu.style.display = 'block';
         }
         }
-        
+       
         document.getElementById('togglebottan').addEventListener('click', function() {
         var element = document.getElementById('toggleElement');
         if (element.style.display === 'none') {
