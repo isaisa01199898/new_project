@@ -2,5 +2,4 @@ Django
 serial
 gunicorn
 django-environ
-decouple
-config
+python-decouple
