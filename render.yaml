@@ -7,7 +7,7 @@ databases:
 
 services:
   - type: web
-    name: heart_libbot
+    name: diary
     env: python
     region: singapore
     buildCommand: './build.sh'
