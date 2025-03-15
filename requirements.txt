@@ -2,3 +2,4 @@ Django
 serial
 gunicorn
 django-environ
+decouple
