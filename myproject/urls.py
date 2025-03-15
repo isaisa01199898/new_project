@@ -20,6 +20,6 @@ from diary.views import IndexView  # 正しいビューをインポート
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('diary/', include('diary.urls')),
+    path('heart_libbot/', include('diary.urls')),
     path('', IndexView.as_view(), name='index'),  # ルートURLにIndexViewを設定
 ]
