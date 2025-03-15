@@ -3,3 +3,4 @@ serial
 gunicorn
 django-environ
 decouple
+config
