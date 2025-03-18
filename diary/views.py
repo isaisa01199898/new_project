@@ -10,7 +10,7 @@ class IndexView(View):
             ZoneInfo("Asia/Tokyo")
         ).strftime("%Y年%m月%d日 %H:%M:%S")
         return render(
-            request, "diary/index.html", {"now_time": now_time , "ser_data":ser_data})  # 修正: コンテキストを辞書に変更
+            request, "diary/index.html", {"now_time": now_time , "ser_data":ser_data , data:data})  # 修正: コンテキストを辞書に変更
  
 
 index = IndexView.as_view()
