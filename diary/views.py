@@ -17,13 +17,14 @@ class IndexView(View):
             ZoneInfo("Asia/Tokyo")
         ).strftime("%Y年%m月%d日 %H:%M:%S")
         return render(
-            request, "diary/index.html", {"now_time": now_time , "ser_data":ser_data , "data1":data1 ,data2=78
-data3=78
-data4=78
-data5=78
-data6=88
-data7=68
-})  # 修正: コンテキストを辞書に変更
+            request, "diary/index.html", {"now_time": now_time , "ser_data":ser_data , "data1":data1 ,
+"data2":data2,
+"data3":data3,
+"data4":data4,
+"data5":data5,
+"data6":data6,
+"data7":data7
+})  
  
 
 index = IndexView.as_view()
