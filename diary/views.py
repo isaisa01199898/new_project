@@ -3,7 +3,7 @@ from django.views import View
 from datetime import datetime
 from zoneinfo import ZoneInfo
 ser_data=78
-
+data=78,68.75.85,92,120
 class IndexView(View):
     def get(self, request):
         now_time = datetime.now(
