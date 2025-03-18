@@ -35,7 +35,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 env = environ.Env()
 env.read_env(os.path.join(BASE_DIR, ".env"))
 
-ALLOWED_HOSTS = ['heart-libbot.onrender.com']
+ALLOWED_HOSTS = ['surch-heart.onrender.com']
 
 
 # Application definition
